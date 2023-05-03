@@ -1,0 +1,135 @@
+body,
+html {
+	padding: 0%;
+	margin: 0%;
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+	cursor: crosshair;
+}
+
+*:focus {
+	outline: none;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3vh;
+	height: 5vh;
+}
+
+.time-played {
+	margin-left: 10%;
+	height: 20px;
+}
+
+#container {
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	cursor: crosshair;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border-spacing: 0px;
+}
+
+tbody {
+	border-top: 4px solid #dddddd;
+	border-left: 4px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-bottom: 4px solid #dddddd;
+	cursor: crosshair;
+}
+
+input[type='text']:nth-child(3n) {
+	border-right: 4px solid #dddddd;
+}
+
+input[type='text']:nth-child(3n):focus {
+	border-right: 4px solid #dddddd;
+}
+
+tr:nth-child(3n) {
+	border-bottom: 3px solid #dddddd;
+}
+
+input {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 3px;
+	width: 42px;
+	height: 42px;
+	font-size: 18px;
+	caret-color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='text'] {
+	-moz-appearance: textfield;
+}
+
+input:hover {
+	cursor: crosshair;
+}
+
+input[type='text']:focus {
+	border-radius: 0%;
+	background-color: rgba(116, 138, 212, 0.616);
+	outline: none;
+	cursor: auto;
+}
+
+.sudoku-input {
+	background-color: #ebebeb;
+}
+
+.sudoku-input-hint {
+	background-color: #c04545;
+}
+
+.footer {
+	width: 100%;
+	height: 22vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.create {
+	width: 100px;
+}
+
+.solve-sudoku,
+.reset {
+	width: 100px;
+	margin-left: 20px;
+}
+
+.select {
+	margin-left: 20px;
+	width: 200px;
+	border: #dddddd 2px solid;
+	border-radius: 3px;
+}
